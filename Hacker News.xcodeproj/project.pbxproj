@@ -11,6 +11,10 @@
 		D14997482963222F001D231D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14997472963222F001D231D /* ContentView.swift */; };
 		D149974A29632234001D231D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D149974929632234001D231D /* Assets.xcassets */; };
 		D149974D29632234001D231D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D149974C29632234001D231D /* Preview Assets.xcassets */; };
+		D1499755296323A1001D231D /* ResulData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1499754296323A1001D231D /* ResulData.swift */; };
+		D149975729632501001D231D /* NetwoekManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D149975629632501001D231D /* NetwoekManager.swift */; };
+		D1D2A5982963349E00F2096E /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D2A5972963349E00F2096E /* DetailedView.swift */; };
+		D1D2A59A29633C1800F2096E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D2A59929633C1800F2096E /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		D14997472963222F001D231D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D149974929632234001D231D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D149974C29632234001D231D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D1499754296323A1001D231D /* ResulData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResulData.swift; sourceTree = "<group>"; };
+		D149975629632501001D231D /* NetwoekManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwoekManager.swift; sourceTree = "<group>"; };
+		D1499758296328CD001D231D /* Hacker-News-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Hacker-News-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D1D2A5972963349E00F2096E /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
+		D1D2A59929633C1800F2096E /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,10 @@
 		D14997442963222F001D231D /* Hacker News */ = {
 			isa = PBXGroup;
 			children = (
+				D1499758296328CD001D231D /* Hacker-News-Info.plist */,
+				D14997532963237F001D231D /* ModelData */,
 				D14997452963222F001D231D /* Hacker_NewsApp.swift */,
-				D14997472963222F001D231D /* ContentView.swift */,
+				D1D2A5962963348700F2096E /* View */,
 				D149974929632234001D231D /* Assets.xcassets */,
 				D149974B29632234001D231D /* Preview Content */,
 			);
@@ -65,6 +76,25 @@
 				D149974C29632234001D231D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D14997532963237F001D231D /* ModelData */ = {
+			isa = PBXGroup;
+			children = (
+				D1499754296323A1001D231D /* ResulData.swift */,
+				D149975629632501001D231D /* NetwoekManager.swift */,
+			);
+			path = ModelData;
+			sourceTree = "<group>";
+		};
+		D1D2A5962963348700F2096E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D14997472963222F001D231D /* ContentView.swift */,
+				D1D2A5972963349E00F2096E /* DetailedView.swift */,
+				D1D2A59929633C1800F2096E /* WebView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1499755296323A1001D231D /* ResulData.swift in Sources */,
 				D14997482963222F001D231D /* ContentView.swift in Sources */,
+				D1D2A5982963349E00F2096E /* DetailedView.swift in Sources */,
+				D1D2A59A29633C1800F2096E /* WebView.swift in Sources */,
 				D14997462963222F001D231D /* Hacker_NewsApp.swift in Sources */,
+				D149975729632501001D231D /* NetwoekManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +303,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Hacker News/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Hacker-News-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -297,7 +331,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Hacker News/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Hacker-News-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
